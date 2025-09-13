@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List
 
 app = FastAPI()
-predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized')
+predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized', model_file='model_quantized.onnx')
 predictor.load_models()
 
 class Task(BaseModel):

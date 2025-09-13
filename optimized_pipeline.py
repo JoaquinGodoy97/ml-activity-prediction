@@ -17,13 +17,17 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ActivityPredictor:
-    def __init__(self, embedding_model_name='sentence-transformers/paraphrase-MiniLM-L3-v2', onnx_model_path='onnx_model_quantized'):
+    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='onnx_model_quantized'):
         """Initialize the predictor with a single embedding model"""
 
         # self.embed_model = SentenceTransformer(embedding_model_name)
         #Onnx to shrink model size
-        self.tokenizer = AutoTokenizer.from_pretrained(embedding_model_name)
-        self.embed_model = ORTModelForFeatureExtraction.from_pretrained(onnx_model_path)
+        # self.tokenizer = AutoTokenizer.from_pretrained(embedding_model_name)
+        self.onnx_model_path = onnx_model_path
+        self.model_file = model_file
+        self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
+            os.path.join(self.onnx_model_path, self.model_file)
+        )
 
         self.main_model = None
         self.slot_model = None

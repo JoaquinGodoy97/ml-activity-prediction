@@ -1,2 +1,2 @@
-optimum @ git+https://github.com/huggingface/optimum@576942c47c2095820b51f70c2ae888f1ad8e1e9e
-optimum-onnx @ git+https://github.com/huggingface/optimum-onnx.git@5ab5bf3b60498eeec008f74cf89d4de12208ddf1
+onnxruntime>=1.19.0
+optimum>=1.17.1

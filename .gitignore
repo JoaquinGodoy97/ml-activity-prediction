@@ -1,0 +1,4 @@
+.venv
+/former_files
+/copies
+__pycache__

@@ -1,0 +1,586 @@
+task_name,task_type,duration,mental_load,physical_load,friction,ideal_slot
+Go for a run,physical,20,low,high,medium,morning
+Do push-ups,physical,20,low,high,medium,morning
+Yoga session,physical,20,low,high,medium,morning
+Dance break,physical,20,low,high,medium,morning
+Cycling,physical,20,low,high,medium,morning
+Sketch design,skill_practice,30,medium,medium,medium,midday
+Paint something small,crafting,30,medium,medium,medium,midday
+DIY fix,crafting,30,medium,medium,medium,midday
+Build a model,crafting,30,medium,medium,medium,midday
+Sew a patch,crafting,30,medium,medium,medium,midday
+Practice coding,skill_practice,45,high,low,high,focus_block
+Play guitar,skill_practice,45,high,medium,high,focus_block
+Language learning,skill_practice,45,high,medium,high,focus_block
+Math exercises,skill_practice,45,high,medium,high,focus_block
+Chess puzzles,skill_practice,45,high,medium,high,focus_block
+Read research paper,comprehension,25,high,low,medium,quiet_block
+Study textbook,comprehension,25,high,low,medium,quiet_block
+Listen to lecture,comprehension,25,high,low,medium,quiet_block
+Analyze case study,comprehension,25,high,low,medium,quiet_block
+Review notes,comprehension,25,high,low,medium,quiet_block
+Call a friend,social,15,medium,low,variable,flexible
+Team chat,social,15,medium,low,variable,flexible
+Coffee with colleague,social,15,medium,low,variable,flexible
+Family time,social,15,medium,low,variable,flexible
+Plan next day,mental_organization,20,high,low,high,post-reset
+Sort notes,mental_organization,20,high,low,high,post-reset
+Write to-do list,mental_organization,20,high,low,high,post-reset
+Clear inbox,mental_organization,20,high,low,high,post-reset
+Reflect on goals,mental_organization,20,high,low,high,post-reset
+Watch series,leisure,60,low,low,low,recovery
+Read novel,leisure,60,low,low,low,recovery
+Play video game,leisure,60,low,low,low,recovery
+Listen to music,leisure,60,low,low,low,recovery
+Take a nap,leisure,60,low,low,low,recovery
+Send messages,essential,90,medium,low,low,flexible
+Write a poem,crafting,30,medium,low,medium,midday
+Find information,essential,15,high,low,medium,post-reset
+Meditate,mental_organization,15,high,low,low,post-reset
+Cook a meal,crafting,30,low,medium,high,midday
+Work on puzzle,skill_practice,30,high,medium,medium,focus_block
+Read a book,comprehension,30,high,low,medium,quiet_block
+Journal,mental_organization,15,medium,low,low,post-reset
+Go for a walk,physical,30,low,high,low,recovery
+jogging,physical,30,low,high,medium,morning
+cycling,physical,30,low,high,medium,morning
+painting,crafting,45,medium,medium,medium,midday
+drawing,crafting,45,medium,medium,medium,midday
+knitting,crafting,45,medium,medium,medium,midday
+piano practice,skill_practice,30,medium,medium,high,midday
+guitar practice,skill_practice,30,medium,medium,high,midday
+language practice,skill_practice,30,medium,medium,high,midday
+reading,comprehension,20,high,low,medium,quiet_block
+writing,comprehension,25,high,low,medium,quiet_block
+listening to podcasts,leisure,20,high,low,medium,recovery
+watching documentaries,leisure,30,high,low,medium,quiet_block
+video call,social,20,low,low,variable,flexible
+Play a board game,social,30,medium,low,variable,flexible
+go fishing,leisure,180,low,low,medium,recovery
+read comics,leisure,30,low,low,low,recovery
+learn a new recipe,crafting,45,medium,low,medium,flexible
+Write a song,crafting,25,low,low,medium,midday
+Prepare a diet drink,crafting,15,low,low,medium,recovery
+Listening to a new album,leisure,45,low,low,medium,recovery
+Practice basketball,physical,45,low,high,medium,morning
+Go for a coffee,leisure,30,low,low,medium,recovery
+Do research on new technologies,comprehension,45,high,low,medium,focus_block
+Go to the beach,leisure,180,low,low,medium,recovery
+Water the plants,essential,30,low,low,medium,recovery
+Do the groceries,essential,45,low,low,medium,flexible
+Watch the game,leisure,60,low,low,medium,recovery
+Practice guitar scales,skill_practice,25,high,medium,medium,focus_block
+Read a chapter of a book,comprehension,30,medium,low,medium,flexible
+Go for a walk in the park,leisure,45,low,medium,medium,recovery
+Prepare and eat lunch,essential,60,low,low,medium,midday
+Watch a documentary,leisure,90,low,low,medium,recovery
+Sketch or doodle freely,skill_practice,20,high,low,medium,post-reset
+Do a bodyweight workout,physical,30,low,high,medium,morning
+Write a short journal entry,mental_organization,15,high,low,medium,quiet_block
+Listen to a podcast episode,leisure,45,medium,low,medium,recovery
+Cook a new recipe,crafting,75,low,medium,medium,flexible
+Clean a room thoroughly,essential,50,low,low,medium,post-reset
+Study a language with flashcards,skill_practice,25,low,low,medium,flexible
+Play a strategy board game,social,60,medium,low,medium,flexible
+Research a topic online,comprehension,35,high,low,medium,post-reset
+Do a deep breathing session,mental_organization,10,low,low,medium,recovery
+Practice piano chords,skill_practice,30,medium,medium,medium,midday
+Declutter digital files,mental_organization,40,low,low,medium,post-reset
+Stretch and mobility routine,physical,20,low,medium,medium,morning
+Plan weekly goals,mental_organization,30,medium,low,medium,flexible
+Watch a short film,leisure,25,low,low,medium,recovery
+Water indoor plants,essential,10,low,low,medium,recovery
+Browse a local newspaper,essential,20,medium,low,medium,flexible
+Do a short yoga flow,physical,25,low,low,medium,flexible
+Play with a pet,leisure,15,low,low,medium,flexible
+Try a new tea or coffee ritual,leisure,15,high,low,medium,post-reset
+Sort laundry and fold clothes,essential,35,low,high,medium,flexible
+Watch a comedy sketch,leisure,20,low,low,medium,recovery
+Practice mindful eating,skill_practice,30,medium,low,medium,flexible
+Write a thank-you message,crafting,10,low,low,medium,flexible
+Explore a new music genre,leisure,40,low,low,medium,recovery
+Do a mini photo walk,crafting,45,medium,medium,medium,flexible
+Update your calendar or planner,mental_organization,20,low,high,medium,morning
+Try a breathing app or tool,mental_organization,10,low,low,medium,midday
+Read a blog post or article,comprehension,15,medium,low,medium,flexible
+Do a quick sketch of your workspace,skill_practice,20,high,medium,medium,flexible
+Read a news article,comprehension,10,low,low,medium,flexible
+Do a 5-minute plank challenge,physical,5,low,low,medium,flexible
+Write a poem or haiku,crafting,15,medium,low,medium,midday
+Organize your desktop files,mental_organization,20,high,medium,medium,flexible
+Practice deep breathing,skill_practice,10,low,low,medium,flexible
+Sketch a self-portrait,skill_practice,30,low,low,medium,flexible
+Watch a TED talk,leisure,18,low,low,medium,recovery
+Do a Pomodoro work sprint,physical,25,low,low,medium,post-reset
+Stretch your legs and back,physical,15,low,medium,medium,recovery
+Make a gratitude list,mental_organization,10,low,low,medium,flexible
+Clean your kitchen counter,essential,20,low,medium,medium,flexible
+Play a mobile puzzle game,leisure,15,medium,low,medium,recovery
+Listen to ambient music,leisure,30,low,medium,medium,recovery
+Write a short blog post,crafting,45,medium,low,medium,post-reset
+Do a guided meditation,mental_organization,20,medium,low,medium,focus_block
+Water outdoor plants,essential,25,low,low,medium,morning
+Try a new dance move,skill_practice,10,low,low,medium,midday
+Review your budget,mental_organization,40,medium,low,medium,flexible
+Declutter your inbox,mental_organization,30,low,low,medium,flexible
+Make a smoothie,crafting,15,medium,medium,medium,flexible
+Do a short HIIT workout,physical,20,low,medium,medium,morning
+Read a research paper abstract,comprehension,10,low,low,medium,quiet_block
+Update your resume,essential,60,high,medium,medium,focus_block
+Play a musical instrument,leisure,35,low,low,medium,recovery
+Organize your bookshelf,essential,30,low,low,medium,post-reset
+Try a new recipe,skill_practice,60,medium,low,medium,flexible
+Take a power nap,leisure,25,low,low,medium,recovery
+Write a letter to your future self,mental_organization,20,medium,low,medium,flexible
+Do a breathing ladder,mental_organization,12,low,low,medium,flexible
+Watch a short documentary,leisure,30,low,low,medium,recovery
+Practice a foreign language,skill_practice,40,medium,low,medium,midday
+Do a digital detox,mental_organization,60,medium,low,medium,post-reset
+Plan your next week,mental_organization,30,high,low,medium,focus_block
+Do a posture check,physical,5,low,low,medium,morning
+Make a to-do list,mental_organization,10,low,low,medium,focus_block
+Call a mentor or colleague,social,35,medium,low,medium,flexible
+Do a visualization exercise,mental_organization,15,high,low,medium,post-reset
+Sort your wardrobe,essential,45,low,low,medium,flexible
+Try a new productivity app,mental_organization,20,medium,low,medium,flexible
+Practice mental math,skill_practice,15,high,low,medium,focus_block
+Do a cold shower challenge,physical,10,low,low,medium,midday
+Write a flash fiction story,crafting,25,high,low,medium,quiet_block
+Update your habit tracker,essential,10,low,low,medium,midday
+Do a breathing box drill,mental_organization,8,low,low,medium,recovery
+Review your goals,mental_organization,20,medium,low,medium,flexible
+Watch a stand-up comedy clip,leisure,12,low,low,medium,recovery
+Do a wall sit,physical,5,low,low,medium,flexible
+Make a mind map,mental_organization,25,low,low,medium,flexible
+Try a new stretching routine,physical,20,low,medium,medium,post-reset
+Do a journaling sprint,comprehension,15,high,low,medium,quiet_block
+Refill water bottle,essential,5,low,low,medium,morning
+Do a quick posture reset,physical,3,low,low,medium,post-reset
+Write down three priorities,mental_organization,7,low,low,medium,flexible
+Do a 10-minute walk,leisure,10,low,low,medium,flexible
+Make a cup of tea,essential,10,low,low,medium,flexible
+Check weather forecast,essential,5,low,low,medium,post-reset
+Do a 3-minute gratitude scan,mental_organization,3,low,low,medium,recovery
+Update your task board,mental_organization,15,high,low,medium,post-reset
+Review yesterday’s progress,essential,20,high,medium,medium,focus_block
+Do a 5-minute breathing reset,mental_organization,5,low,low,medium,recovery
+Clean your glasses or screen,physical,5,low,low,medium,post-reset
+Stretch wrists and shoulders,physical,8,low,low,medium,recovery
+Write a tweet or short post,crafting,10,low,low,medium,flexible
+Check your calendar,essential,5,low,low,medium,flexible
+Do a 15-minute reading sprint,comprehension,15,medium,low,medium,focus_block
+Organize your browser tabs,mental_organization,10,low,low,medium,recovery
+Do a 20-minute focused work block,mental_organization,20,medium,low,medium,morning
+Take a 10-minute break outside,essential,10,low,low,medium,recovery
+Do a 25-minute deep work session,essential,25,medium,low,medium,midday
+Write a short reflection,mental_organization,15,medium,low,medium,post-reset
+Do a 30-minute creative sprint,mental_organization,30,medium,low,medium,midday
+Review your weekly goals,mental_organization,20,medium,low,medium,post-rest
+Do a 45-minute coding block,skill_practice,45,medium,low,medium,flexible
+Try a new keyboard shortcut,skill_practice,5,low,low,medium,flexible
+Do a 60-minute uninterrupted work session,essential,60,medium,low,medium,flexible
+Write a short email,crafting,10,low,low,medium,post-reset
+Do a 90-minute deep dive,leisure,90,low,medium,medium,flexible
+Clean your workspace,essential,15,medium,low,medium,post-reset
+Do a 2-minute silence reset,essential,2,low,low,medium,recovery
+Do a 10-minute mobility drill,physical,10,low,low,medium,post-reset
+Write a short gratitude note,crafting,10,low,low,medium,quiet_block
+Do a 20-minute journaling session,mental_organization,20,medium,low,medium,post-reset
+Try a new breathing pattern,skill_practice,5,low,low,medium,midday
+Do a 15-minute cleanup sprint,mental_organization,15,high,low,medium,post-reset
+Do a 25-minute research block,comprehension,25,medium,low,medium,flexible
+Write a short summary of a podcast,crafting,20,high,low,medium,midday
+Do a 30-minute planning session,mental_organization,30,low,low,medium,flexible
+Try a new productivity method,mental_organization,20,high,low,medium,post-reset
+Do a 45-minute creative block,mental_organization,45,low,low,medium,midday
+Write a short reflection on your day,mental_organization,15,low,low,medium,flexible
+Do a 60-minute learning session,comprehension,60,low,low,medium,midday
+Try a new app feature,leisure,10,low,low,medium,flexible
+Write a short review of a book,crafting,25,low,low,medium,flexible
+Do a 5-minute reset ritual,essential,5,low,low,medium,recovery
+Check your weekly metrics,essential,15,low,low,medium,post-reset
+Do a 20-minute reflection walk,essential,20,low,low,medium,recovery
+Refill your water bottle,essential,5,low,low,medium,morning
+Stretch your legs,physical,10,low,low,medium,recovery
+Write down today's goals,mental_organization,7,low,low,medium,post-reset
+Make a cup of coffee,essential,10,low,low,medium,flexible
+Check the weather forecast,essential,5,low,low,medium,morning
+Organize your workspace,mental_organization,15,medium,medium,medium,post-reset
+Clean your phone screen,essential,5,low,low,medium,post-reset
+Update your calendar,mental_organization,10,low,low,medium,post-reset
+Review yesterday's progress,mental_organization,20,medium,low,medium,focus_block
+Sort your downloads folder,mental_organization,15,low,low,medium,flexible
+Listen to a music playlist,leisure,30,low,low,medium,recovery
+Sketch something from memory,skill_practice,25,low,low,medium,midday
+Read a blog post,comprehension,10,low,low,medium,flexible
+Vacuum your room,essential,20,low,low,medium,midday
+Fold clean laundry,essential,30,low,low,medium,midday
+Meditate in silence,mental_organization,15,medium,low,medium,recovery
+Practice guitar chords,skill_practice,30,medium,medium,medium,flexible
+Write a blog draft,crafting,45,medium,low,medium,flexible
+Clean your keyboard,essential,10,low,low,medium,midday
+Plan your weekend,mental_organization,20,high,low,medium,flexible
+Read a chapter of a novel,leisure,30,low,low,medium,post-reset
+Stretch your back and shoulders,physical,12,low,medium,medium,recovery
+Check your app usage stats,essential,5,low,low,medium,flexible
+Sketch a mind map,mental_organization,20,high,low,medium,focus_block
+Clean your bathroom sink,essential,15,medium,medium,medium,post-reset
+Read a research abstract,comprehension,10,low,low,medium,quiet_block
+Try a new breathing technique,mental_organization,5,low,low,medium,recovery
+Write a reflection on your habits,mental_organization,20,medium,low,medium,midday
+Organize your notes,mental_organization,20,medium,low,medium,flexible
+Read a page from a novel,comprehension,5,low,low,medium,flexible
+Organize your spice rack,mental_organization,15,medium,low,medium,focus_block
+Check your sleep stats,essential,5,low,low,medium,post-reset
+Write a short message to a friend,crafting,10,low,low,medium,flexible
+Clean your bathroom cabinet,essential,15,low,low,medium,post-reset
+Sort your desktop icons,mental_organization,10,low,low,medium,midday
+Write a short goal summary,mental_organization,10,low,low,medium,recovery
+Check your hydration level,essential,2,low,low,medium,midday
+Read a health tip,comprehension,3,low,low,medium,flexible
+Organize your wallet,mental_organization,10,low,low,medium,flexible
+Write a quick gratitude note,crafting,5,low,low,medium,quiet_block
+Clean your windowsill,essential,10,low,low,medium,post-reset
+Read a page from a biography,comprehension,6,low,low,medium,flexible
+Check your internet speed,essential,3,low,low,medium,morning
+Clean your fridge shelves,essential,25,low,low,medium,recovery
+Write a short review,crafting,10,low,low,medium,post-reset
+Read a Wikipedia article,comprehension,12,high,low,medium,post-reset
+Write a daily affirmation,crafting,5,low,low,medium,post-reset
+Sort your socks,mental_organization,10,low,low,medium,post-reset
+Check your screen time,essential,5,low,low,medium,midday
+Clean your shoes,essential,15,low,low,medium,post-reset
+Read a tech blog,comprehension,20,high,low,medium,post-reset
+Organize your cleaning supplies,mental_organization,25,medium,low,medium,post-reset
+Read a page from a textbook,comprehension,7,low,low,medium,quiet_block
+Check your device battery levels,essential,3,low,low,medium,recovery
+Organize your receipts,mental_organization,25,medium,low,medium,post-reset
+Write a quick checklist,mental_organization,7,low,low,medium,post-reset
+Read a product review,comprehension,10,low,low,medium,flexible
+Review your calendar events,mental_organization,10,low,low,medium,post-reset
+Update your shopping list,mental_organization,10,low,low,medium,post-reset
+Write a short email reply,crafting,5,low,low,medium,flexible
+Stretch your calves,physical,8,low,low,medium,recovery
+Organize your cables,mental_organization,20,low,medium,medium,flexible
+Write a short plan for tomorrow,mental_organization,15,medium,low,medium,midday
+Clean your bathroom mirror,essential,10,low,low,medium,post-reset
+Review your trading journal,mental_organization,35,medium,low,medium,focus_block
+Try a new journaling format,mental_organization,10,low,low,medium,quiet_block
+Plan your next reading list,mental_organization,25,medium,low,medium,post-reset
+Check your step count,essential,2,low,low,medium,post-reset
+Read a page from a manual,comprehension,5,low,low,medium,quiet_block
+Sort your pantry items,mental_organization,30,low,medium,medium,post-reset
+Check your email filters,essential,10,low,low,medium,flexible
+Read a motivational quote,comprehension,3,low,low,medium,flexible
+Browse a recipe site,leisure,15,medium,low,medium,flexible
+Wipe down your desk,essential,10,low,low,medium,post-reset
+Check your to-do list,essential,5,low,low,medium,post-reset
+Clean your kitchen drawer,essential,20,low,low,medium,flexible
+Clean your bathroom floor,essential,20,low,low,medium,recovery
+Write a short poem,crafting,15,low,low,medium,midday
+Check your calendar for upcoming events,essential,10,low,low,medium,flexible
+Clean your keyboard and mouse,essential,10,low,low,medium,post-reset
+Read a page from a self-help book,comprehension,6,low,low,medium,recovery
+Sort your email inbox,essential,20,low,low,medium,flexible
+Write a short gratitude list,mental_organization,10,low,low,medium,flexible
+Stretch your neck and shoulders,physical,8,low,low,medium,recovery
+Check your weekly goals,essential,15,low,low,medium,flexible
+Read a page from a philosophy book,comprehension,7,low,low,medium,recovery
+Organize your digital notes,essential,25,low,low,medium,post-reset
+Write a short reflection on your habits,mental_organization,15,medium,low,medium,midday
+Read a page from a science magazine,comprehension,6,low,low,medium,quiet_block
+Sort your browser bookmarks,mental_organization,20,medium,low,medium,quiet_block
+Write a short plan for the weekend,mental_organization,10,low,low,medium,post-reset
+Stretch your wrists and fingers,physical,5,low,low,medium,recovery
+Check your monthly spending,essential,15,low,low,medium,morning
+Clean your bedroom floor,essential,20,low,low,medium,midday
+Read a page from a travel guide,comprehension,6,low,low,medium,recovery
+Organize your task board,mental_organization,25,low,low,medium,flexible
+Write a short note to yourself,mental_organization,10,low,low,medium,post-reset
+Check your water intake,essential,3,low,low,medium,recovery
+Clean your kitchen sink,essential,15,low,high,medium,flexible
+Read a page from a history book,comprehension,7,low,low,medium,midday
+Sort your physical documents,essential,30,low,low,medium,morning
+Write a short list of priorities,mental_organization,10,low,low,medium,post-reset
+Stretch your lower back,physical,6,low,low,medium,recovery
+Check your weekly schedule,essential,10,low,low,medium,flexible
+Clean your living room table,essential,15,low,low,medium,flexible
+Read a page from a psychology book,comprehension,6,low,low,medium,post-reset
+Organize your desktop folders,mental_organization,20,low,low,medium,post-reset
+Write a short message to your future self,mental_organization,10,low,low,medium,flexible
+Check your screen brightness settings,essential,3,low,low,medium,post-reset
+Clean your kitchen floor,essential,20,low,high,medium,flexible
+Read a page from a productivity book,comprehension,7,low,low,medium,flexible
+Sort your mobile apps,essential,15,low,low,medium,midday
+Write a short checklist for tomorrow,mental_organization,10,low,low,medium,flexible
+Stretch your hamstrings,physical,8,low,low,medium,recovery
+Check your weekly progress,essential,15,low,low,medium,post-reset
+Clean your bathroom tiles,essential,20,medium,medium,medium,recovery
+Organize your cloud storage,essential,25,low,low,medium,flexible
+Write a short review of your week,mental_organization,15,high,low,medium,post-reset
+Check your device notifications,essential,5,low,low,medium,post-reset
+Clean your kitchen shelves,essential,20,low,high,medium,flexible
+Sort your laundry,essential,30,low,low,medium,post-reset
+Organize your photo gallery,essential,20,low,low,medium,flexible
+Write a short summary of your day,crafting,15,medium,low,medium,flexible
+Check your calendar reminders,essential,5,low,low,medium,flexible
+Clean your phone case,essential,10,low,low,medium,flexible
+Read a page from a poetry book,comprehension,6,low,low,medium,flexible
+Write a short list of tasks,essential,10,low,low,medium,flexible
+Stretch your ankles,physical,5,low,low,medium,recovery
+Check your weekly habits,essential,15,high,medium,medium,post-reset
+Clean your dining table,essential,20,low,medium,medium,midday
+Read a page from a design book,comprehension,7,low,low,medium,flexible
+Organize your bookmarks bar,mental_organization,20,medium,low,medium,flexible
+Write a short note to a friend,social,10,low,low,medium,flexible
+Check your hydration reminders,essential,3,low,low,medium,post-reset
+Clean your kitchen backsplash,essential,15,low,low,medium,morning
+Read a page from a cookbook,comprehension,6,low,low,medium,quiet_block
+Sort your receipts,mental_organization,30,medium,low,medium,midday
+Write a short list of ideas,mental_organization,10,low,low,medium,focus_block
+Stretch your spine,physical,6,low,low,medium,flexible
+Check your weekly calendar,essential,10,low,low,medium,flexible
+Clean your nightstand,essential,15,low,low,medium,midday
+Read a page from a memoir,comprehension,6,low,low,medium,morning
+Organize your app folders,mental_organization,20,low,low,medium,flexible
+Write a short message to your team,social,10,low,low,medium,flexible
+Check your battery health,essential,3,low,low,medium,flexible
+Clean your kitchen cabinet,essential,20,low,medium,medium,flexible
+Read a page from a journal,comprehension,5,low,low,medium,post-reset
+Sort your workspace drawers,essential,25,low,low,medium,flexible
+Write a short checklist for the week,mental_organization,10,low,low,medium,flexible
+Stretch your forearms,physical,8,low,low,medium,flexible
+Check your weekly review notes,essential,15,medium,low,medium,morning
+Clean your bathroom shelf,essential,20,medium,medium,medium,post-reset
+Read a page from a graphic novel,comprehension,6,low,low,medium,quiet_block
+Organize your cloud folders,mental_organization,25,low,low,medium,midday
+Write a short review of your habits,mental_organization,15,medium,low,medium,flexible
+Check your notification settings,essential,5,low,low,medium,post-reset
+Sort your laundry basket,crafting,30,low,low,medium,post-reset
+Write a short message to yourself,skill_practice,10,low,low,medium,flexible
+Stretch your shoulders,leisure,8,low,low,medium,recovery
+Check your weekly planner,essential,15,low,low,medium,morning
+Read a page from a travel journal,comprehension,6,low,low,medium,post-reset
+Organize your digital workspace,crafting,25,medium,low,medium,midday
+Write a short reflection on your week,mental_organization,15,medium,low,medium,flexible
+Sketch a random doodle on scrap paper,skill_practice,7,low,low,medium,flexible
+Rearrange your desk setup slightly,essential,12,low,low,medium,midday
+Water your plants (or check if they’re thirsty),essential,8,low,low,medium,midday
+Sort out 5 unused apps and uninstall them,essential,15,low,low,medium,flexible
+Wipe down your keyboard quickly,essential,6,low,low,medium,flexible
+Jot down 3 things you’re grateful for,mental_organization,10,low,low,medium,morning
+Try to balance on one foot for fun,leisure,2,low,low,medium,recovery
+Look out the window and notice 5 details,leisure,4,low,low,medium,recovery
+Make a mini playlist with 3 mood songs,essential,12,low,low,medium,recovery
+Sort out tangled cables nearby,essential,18,low,high,medium,flexible
+Take a goofy selfie and save it for later,physical,5,low,low,medium,quiet_block
+Declutter your wallet or purse,essential,10,low,low,medium,midday
+Re-fold one messy drawer of clothes,essential,20,low,high,medium,flexible
+Write a random haiku about your surroundings,mental_organization,6,low,low,medium,midday
+Send a quick 'hey' message to an old friend,social,8,low,low,medium,flexible
+Stretch your arms like a cat,physical,3,low,low,medium,midday
+Check the battery health of your devices,essential,9,low,low,medium,recovery
+Rename messy files on your desktop,essential,15,medium,low,medium,flexible
+Reorganize your fridge shelf,mental_organization,14,low,low,medium,flexible
+Polish your glasses or sunglasses,essential,5,low,low,medium,post-reset
+Delete 5 old screenshots you don’t need,essential,6,low,low,medium,flexible
+Play one round of a puzzle game,skill_practice,10,low,low,medium,recovery
+Practice your signature in funky styles,skill_practice,8,low,low,medium,post-reset
+Take a mindful sip of water,mental_organization,2,low,low,medium,post-reset
+Reposition a picture frame in your room,mental_organization,4,low,low,medium,flexible
+Quickly vacuum under your bed,essential,15,low,low,medium,post-reset
+Check the expiry date of 3 pantry items,essential,7,low,low,medium,flexible
+Pet your cat/dog (or imagine it if none),essential,5,low,low,medium,flexible
+Try 10 slow deep breaths,mental_organization,5,low,low,medium,quiet_block
+Back up a few photos to the cloud,essential,12,low,low,medium,recovery
+Organize a folder in your email,mental_organization,18,low,low,medium,post-reset
+Write down 2 random ideas for fun projects,leisure,9,low,low,medium,post-reset
+Look through your bookmarks and delete 2,mental_organization,10,low,low,medium,flexible
+Stretch your wrists gently,physical,3,low,low,medium,midday
+Clean smudges from your screen,essential,6,low,low,medium,flexible
+Make a 2-line poem that rhymes,crafting,4,low,low,medium,focus_block
+Try a silly dance move,leisure,5,low,low,medium,morning
+Reorder apps on your home screen,mental_organization,12,low,medium,medium,flexible
+Put coins in order by size,mental_organization,8,low,low,medium,post-reset
+Scan through today’s headlines,comprehension,15,medium,low,medium,flexible
+Check the weather for tomorrow,essential,5,low,low,medium,flexible
+Fold one shirt neatly,physical,3,low,low,medium,flexible
+Send yourself a reminder email,leisure,6,low,low,medium,post-rest
+Write down a dream you remember,mental_organization,10,low,low,medium,post-reset
+Try to whistle a tune you like,leisure,4,low,low,medium,recovery
+Go for a long walk,physical,180,low,medium,medium,post-reset
+Go visit parents,essential,180,low,low,medium,post-reset
+Learn how to play the bass,skill_practice,30,low,low,medium,focus_block
+Try to draw a circle without lifting pen,skill_practice,5,low,low,medium,midday
+Check your to-do list and cross off 1 thing,mental_organization,5,low,low,medium,post-reset
+Delete 5 old voice notes,essential,10,low,low,medium,morning
+Check if your chargers are working fine,essential,7,low,low,medium,flexible
+Eat an apple,essential,15,low,low,medium,recovery
+Eat an orange,essential,15,low,low,medium,recovery
+Find new offers in Mercado Libre,essential,15,medium,low,medium,flexible
+Learn something new,crafting,25,medium,medium,medium,flexible
+learn about the universe,comprehension,15,high,low,medium,focus_block
+Complete a videogame,leisure,40,low,low,medium,recovery
+Practice mindfulness,skill_practice,15,medium,low,medium,flexible
+Make a silly voice recording,leisure,7,low,low,medium,recovery
+Clean the microwave handle,essential,5,low,low,medium,post-reset
+Reposition a plant for better light,essential,8,low,low,medium,flexible
+Close your eyes & count backwards from 30,leisure,2,low,low,medium,post-reset
+Snap a photo of something random nearby,leisure,4,low,low,medium,recovery
+Write a pretend recipe for an imaginary dish,crafting,12,low,low,medium,recovery
+Move 3 items on your desk just for symmetry,physical,6,low,low,medium,flexible
+Polish a spoon or fork for fun,leisure,7,low,low,medium,recovery
+Compliment yourself in the mirror,mental_organization,4,low,low,medium,midday
+Re-roll your headphones neatly,essential,7,low,low,medium,flexible
+Write one random fact you know,mental_organization,6,low,low,medium,post-reset
+Five push-ups,physical,5,low,low,medium,morning
+working on a training session powerpoint,essential,30,low,high,medium,midday
+Develop an app,essential,45,high,low,medium,midday
+Delete 2 files from downloads,essential,6,low,low,medium,post-reset
+Rearrange spices in the kitchen,essential,15,high,medium,medium,post-reset
+List 2 things you’d like to learn someday,mental_organization,7,low,low,medium,quiet_block
+Polish your nails or clip them,essential,15,low,low,medium,flexible
+Straighten a stack of papers,essential,4,low,low,medium,recovery
+Open a random map location and look around,leisure,9,low,low,medium,flexible
+Clean your earbuds real quick,essential,12,low,low,medium,recovery
+"Write down 3 random words, make a sentence",skill_practice,8,low,low,medium,midday
+Straighten your bedsheet,essential,5,low,low,medium,morning 
+Check the smell of your fridge,essential,3,low,low,medium,recovery
+Fold a piece of paper into a tiny square,physical,4,low,low,medium,flexible
+Browse your notes app for old gems,mental_organization,10,low,low,medium,focus_block
+Hum your fav song’s chorus,leisure,4,low,low,medium,post-reset
+Check Upwork applications on Upwork,essential,15,medium,low,medium,midday
+Upload a video to youtube,essential,30,low,low,medium,focus_block
+Work on a video project,essential,60,high,low,medium,focus_block
+Drink a glass of water during the day,essential,10,low,low,medium,recovery
+Read one psychology article,comprehension,15,medium,low,medium,post-reset
+Wash and hang your clothes,essential,30,high,medium,medium,post-reset
+walk up to 1500 steps,physical,20,low,medium,medium,post-reset
+Learn about prehistoric history,comprehension,30,medium,low,medium,midday
+Clean computer from unnecessary programs,essential,30,low,medium,medium,midday
+Reorganize your browser tabs,mental_organization,9,medium,low,medium,flexible
+Invent a new smoothie recipe,mental_organization,20,medium,low,medium,flexible
+Write a haiku about your day,mental_organization,10,low,low,medium,post-reset
+Rearrange three objects on your desk,mental_organization,5,low,low,medium,flexible
+Listen to a song with closed eyes,comprehension,6,low,low,medium,recovery
+Draw your mood as a shape,leisure,15,low,low,medium,recovery
+Sort your apps by color,essential,25,medium,low,medium,post-reset
+Describe your current energy in one word,mental_organization,2,low,low,medium,post-reset
+Write a fake news headline,skill_practice,8,low,low,medium,midday
+Sketch a map of your ideal morning,mental_organization,20,low,high,medium,flexible
+List five things you learned this week,mental_organization,10,low,low,medium,post-reset
+Write a tweet from your future self,leisure,5,low,low,medium,post-reset
+Sort your notes by mood,mental_organization,20,low,low,medium,flexible
+Write a short poem using only verbs,crafting,8,low,low,medium,flexible
+Create a new emoji using punctuation,crafting,5,low,low,medium,midday
+Write a metaphor for your current focus,mental_organization,7,low,low,medium,flexible
+Invent a new productivity rule,mental_organization,12,low,low,medium,flexible
+Make a playlist for a fictional character,leisure,30,low,low,medium,recovery
+Go for a 30-minute walk,physical,30,low,low,medium,recovery
+Trace the outline of your hand,mental_organization,3,low,low,medium,flexible
+Invent a new name for your workspace,mental_organization,5,low,low,medium,flexible
+List five textures around you,mental_organization,4,low,low,medium,flexible
+Write a short note to your future distractions,mental_organization,8,low,low,medium,flexible
+Reposition one object with intention,mental_organization,2,low,low,medium,flexible
+Describe your current mood using a color,mental_organization,3,low,low,medium,flexible
+Invent a new break ritual,mental_organization,6,low,low,medium,recovery
+Write a short list of things you’re avoiding,mental_organization,10,low,low,medium,flexible
+Make a sound using an object nearby,leisure,2,low,low,medium,recovery
+List five things you can hear right now,mental_organization,3,low,low,medium,post-reset
+Write a short message to your past self,mental_organization,10,low,low,medium,flexible
+Invent a new tag for your digital notes,mental_organization,5,low,low,medium,flexible
+Describe your current focus as a landscape,mental_organization,7,low,low,medium,flexible
+List five things that feel unfinished,mental_organization,8,low,low,medium,flexible
+Write a short poem using only nouns,crafting,10,low,low,medium,flexible
+Create a fictional app for your habits,crafting,12,low,low,medium,flexible
+List five things that make you feel grounded,mental_organization,6,low,low,medium,post-reset
+Write a short dialogue between your calendar and your to-do list,mental_organization,12,low,low,medium,flexible
+Invent a new time slot label,mental_organization,4,low,low,medium,flexible
+Describe your ideal reset in one sentence,mental_organization,5,low,low,medium,flexible
+Make a list of things you’d automate if you could,mental_organization,10,low,low,medium,flexible
+Write a short reflection using only metaphors,mental_organization,12,low,low,medium,flexible
+Create a fictional productivity tool and name it,mental_organization,10,low,low,medium,flexible
+Eat 3 eggs,essential,15,low,low,medium,recovery
+Organize books by genre,mental_organization,15,low,low,medium,flexible
+Take the dog for a walk,essential,60,low,low,medium,flexible
+Go for a brisk walk around the block,physical,20,low,low,medium,flexible
+Prepare a protein-rich breakfast,essential,25,low,low,medium,flexible
+Read a chapter from a nonfiction book,comprehension,30,low,low,medium,flexible
+Stretch your full body with a yoga flow,physical,15,low,low,medium,recovery
+Water your balcony plants,essential,10,low,low,medium,recovery
+Make a fresh fruit salad,essential,15,low,low,medium,recovery
+Read a short story from an anthology,comprehension,20,low,low,medium,flexible
+Take a walk in a nearby park,leisure,30,low,low,medium,recovery
+Prepare a green smoothie,essential,10,low,low,medium,flexible
+Read a few pages of a novel outdoors,leisure,15,low,low,medium,flexible
+Do a breathing exercise in fresh air,mental_organization,10,low,low,medium,recovery
+Make a list of healthy snacks,essential,8,low,low,medium,flexible
+Stretch your legs and hips,physical,12,low,low,medium,recovery
+Read a blog post about nutrition,comprehension,10,low,low,medium,flexible
+Go for a bike ride,leisure,40,low,medium,medium,post-reset
+Prepare a simple vegetarian lunch,essential,30,low,low,medium,recovery
+Read a magazine article on wellness,comprehension,15,low,low,medium,flexible
+Do a quick stair climb session,physical,10,low,low,medium,morning
+Take a walk while listening to a podcast,leisure,25,low,low,medium,recovery
+Make a hydration tracker,essential,5,low,low,medium,flexible
+Stretch your shoulders and neck,physical,10,low,low,medium,recovery
+Read a page from a travel memoir,comprehension,6,low,low,medium,flexible
+Invent a new ritual for starting work,mental_organization,8,low,low,medium,flexible
+Write a short note to your distractions,mental_organization,7,low,low,medium,flexible
+Go for a walk with a friend,social,35,low,low,medium,morning
+Catch a butterfly outdoors,essential,45,low,low,medium,midday
+Take a walk in silence,essential,20,low,low,medium,recovery
+Make a list of foods to avoid,mental_organization,8,low,low,medium,flexible
+Read a page from a mindfulness book,comprehension,7,low,low,medium,flexible
+Go outside and breathe deeply,mental_organization,5,low,low,medium,recovery
+Prepare a colorful salad,essential,20,low,low,medium,midday
+Stretch your spine and back,physical,10,low,low,medium,recovery
+Do a short jump rope session,physical,10,low,low,medium,flexible
+Read a few pages of a graphic novel,comprehension,10,low,low,medium,flexible
+Prepare a post-workout snack,essential,15,low,low,medium,flexible
+Stretch your wrists and forearms,physical,6,low,low,medium,recovery
+Make a grocery list for clean eating,essential,10,low,low,medium,flexible
+Take a walk at sunset,essential,25,low,low,medium,flexible
+Read a few pages of poetry,comprehension,10,low,low,medium,flexible
+Prepare a light dinner,essential,30,low,low,medium,flexible
+Go for a walk with no phone,essential,15,low,low,medium,recovery
+Read a page from a science book,comprehension,7,low,low,medium,flexible
+Make a list of anti-inflammatory foods,mental_organization,10,low,low,medium,flexible
+Take a walk after lunch,essential,20,low,low,medium,flexible
+Do a short dance routine,physical,20,low,low,medium,recovery
+Read a few pages of a biography,comprehension,15,low,low,medium,flexible
+Prepare a high-fiber snack,essential,10,low,low,medium,flexible
+Stretch your calves and ankles,physical,8,low,low,medium,recovery
+Go outside and observe the sky,essential,5,low,low,medium,flexible
+Do a mobility drill,physical,12,low,low,medium,post-reset
+Sketch my neighbor's quirky garden gnome,skill_practice,20,low,low,medium,flexible
+Tune up my old acoustic guitar strings,essential,15,low,low,medium,recovery
+Brew that Ethiopian coffee blend I stashed,essential,10,low,low,medium,flexible
+Jot notes on last night's dream about flying kites,mental_organization,5,low,low,medium,flexible
+Repot the succulent from Auntie's funeral,essential,25,low,low,medium,flexible
+Practice juggling with those mismatched socks,skill_practice,30,low,medium,medium,flexible
+Read chapter on quantum entanglement in my physics book,comprehension,40,medium,low,medium,flexible
+Mix a playlist for my commute with 80s synthwave,essential,35,low,low,medium,flexible
+Polish my vintage wristwatch collection,essential,50,low,low,medium,flexible
+Bake mini scones with leftover blueberries,essential,25,low,low,medium,flexible
+Meditate on that unresolved chess puzzle,mental_organization,15,low,low,medium,flexible
+Catalog my stamp album's rare errors,essential,45,low,low,medium,flexible
+Stretch routine targeting my runner's knee,physical,20,low,low,medium,recovery
+Draft email to editor about my sci-fi manuscript,mental_organization,30,low,low,medium,flexible
+Watercolor the view from my attic window,leisure,40,low,low,medium,recovery
+Rehearse monologue from that forgotten play,mental_organization,25,low,low,medium,flexible
+Sort spices by heat level in my curry kit,mental_organization,10,low,low,medium,flexible
+Debug code snippet for my app side project,essential,35,low,low,medium,flexible
+Prune bonsai tree shaped like a dragon,leisure,20,low,low,medium,recovery
+Listen to vinyl of dad's favorite jazz album,leisure,50,low,low,medium,recovery
+Assemble model kit of my dream spaceship,crafting,45,low,low,medium,flexible
+Journal about hiking trail mishap last weekend,mental_organization,15,low,low,medium,post-reset
+Sharpen knives for tomorrow's sushi prep,essential,10,low,low,medium,flexible
+Study star chart for upcoming meteor shower,comprehension,30,low,low,medium,flexible
+Fold origami cranes for friend's birthday,essential,25,low,low,medium,flexible
+Tune bike gears after muddy ride,essential,20,low,low,medium,flexible
+Review flashcards on ancient Greek myths,comprehension,40,medium,low,medium,flexible
+Mix essential oils for my headache blend,essential,15,low,low,medium,flexible
+Sketch tattoo ideas inspired by Celtic knots,skill_practice,35,low,low,medium,flexible
+Practice bird calls from my ornithology guide,skill_practice,20,low,low,medium,flexible
+Catch a butterfly outdoors,essential,45,low,low,,midday

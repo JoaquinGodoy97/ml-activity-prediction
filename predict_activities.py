@@ -2,6 +2,7 @@ from optimized_pipeline import ActivityPredictor
 import pandas as pd
 import os
 
+# Local use
 def main(activity_list):
     """Main execution function"""
     predictor = ActivityPredictor()
@@ -40,8 +41,6 @@ def main(activity_list):
         # print()
 
         checked_task = pd.DataFrame([result])
-
-        
         original_df = save_fixed_progress(original_df, checked_task)
     
     original_df.to_csv("activity_dataset.csv", index=False)

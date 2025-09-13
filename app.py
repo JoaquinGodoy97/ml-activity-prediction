@@ -1,14 +1,23 @@
 from fastapi import FastAPI
 from optimized_pipeline import ActivityPredictor
 from pydantic import BaseModel
-from predict_activities import main
+from typing import List
 
 app = FastAPI()
+predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized')
+predictor.load_models()
+
+class Task(BaseModel):
+    name: str
+    duration: float
 
 class TaskInput(BaseModel):
-    task_list: list
+    task_list: List[Task]
 
 @app.post("/predict_activities")
 async def predict(task_input: TaskInput):
-    result = main(task_input.task_list)
-    return result
+    results = []
+    for task in task_input.task_list:
+        result = predictor.predict_complete_task(task.name, task.duration)
+        results.append(result)
+    return {"predictions": results}

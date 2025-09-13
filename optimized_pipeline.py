@@ -17,7 +17,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ActivityPredictor:
-    def __init__(self, embedding_model_name='sentence-transformers/paraphrase-MiniLM-L3-v2', onnx_model_path='onnx_model'):
+    def __init__(self, embedding_model_name='sentence-transformers/paraphrase-MiniLM-L3-v2', onnx_model_path='onnx_model_quantized'):
         """Initialize the predictor with a single embedding model"""
 
         # self.embed_model = SentenceTransformer(embedding_model_name)

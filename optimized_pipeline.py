@@ -70,7 +70,9 @@ class ActivityPredictor:
         """Generate embeddings using ONNX model"""
         inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         outputs = self.embed_model(**inputs)
-        return outputs.last_hidden_state.mean(dim=1).detach().numpy()
+        # Get the first output (usually the embeddings)
+        embeddings = list(outputs.values())[0]
+        return embeddings.mean(dim=1).detach().numpy()
     
     def train_main_model(self):
         """Train the main model for task classification"""

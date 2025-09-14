@@ -67,10 +67,10 @@ class ActivityPredictor:
         return self.df
     
     def _generate_embeddings(self, texts):
-        """Generate embeddings using ONNX model"""
+        """Generate embeddings using ONNX model - FIXED VERSION"""
         inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         outputs = self.embed_model(**inputs)
-        # Get the first output (usually the embeddings)
+        # Get the first output (usually the embeddings) - FIXED
         embeddings = list(outputs.values())[0]
         return embeddings.mean(dim=1).detach().numpy()
     

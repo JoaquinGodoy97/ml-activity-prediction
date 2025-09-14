@@ -17,25 +17,37 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ActivityPredictor:
-    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='model.onnx'):
+    #LOCAL
+    # def __init__(self, onnx_model_path='onnx_model_quantized', model_file='model.onnx'):
+    #TOKEN
+    def __init__(self, hf_api_url=None, hf_token=None):
         """Initialize the predictor with a single embedding model"""
 
         # self.embed_model = SentenceTransformer(embedding_model_name)
         #Onnx to shrink model size
         
 
-        self.onnx_model_path = onnx_model_path
-        self.model_file = model_file
-        model_path = os.path.join(self.onnx_model_path, self.model_file)
+        # self.onnx_model_path = onnx_model_path
+        # self.model_file = model_file
+        # model_path = os.path.join(self.onnx_model_path, self.model_file)
+        
+        # HUGGIN FACE TOKEN
 
-        if not os.path.exists(model_path):
-            raise FileNotFoundError(f"ONNX model not found at {model_path}")
-        self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
-            self.onnx_model_path,
-            file_name=self.model_file,
-            local_files_only=True,
-            export=False
-        )
+        if hf_api_url is None or hf_token is None:
+            raise ValueError("You must provide Hugging Face API URL and token")
+        self.hf_api_url = hf_api_url
+        self.hf_token = hf_token
+        self.headers = {"Authorization": f"Bearer {self.hf_token}"}
+
+        #LOCAL FILES
+        # if not os.path.exists(model_path):
+        #     raise FileNotFoundError(f"ONNX model not found at {model_path}")
+        # self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
+        #     self.onnx_model_path,
+        #     file_name=self.model_file,
+        #     local_files_only=True,
+        #     export=False
+        # )
 
         self.tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/paraphrase-MiniLM-L3-v2")  # FIXED: Use local files only
         # self.embed_model = ORTModelForFeatureExtraction.from_pretrained(

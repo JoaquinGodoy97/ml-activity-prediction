@@ -3,9 +3,9 @@ import pandas as pd
 import os
 
 # Local use
-def main(activity_list):
+def main():
     """Main execution function"""
-    predictor = ActivityPredictor()
+    predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized', model_file='model_quantized.onnx')
     
     # Check if models exist, if not train them
     if not all(os.path.exists(f) for f in ["main_model.joblib", "slot_model.joblib", "slot_encoders.joblib"]):
@@ -15,10 +15,10 @@ def main(activity_list):
         print("Loading existing models...")
         predictor.load_models()
     
-    # # Example predictions
-    # activity_list = [
-    # {"name": "Catch a butterfly outdoors", "duration": 45}
-    # ]
+    # Example predictions
+    activity_list = [
+    {"name": "Catch a butterfly outdoors", "duration": 45}
+    ]
 
     original_df = pd.read_csv("activity_dataset.csv")
 
@@ -47,5 +47,5 @@ def main(activity_list):
 
     return results
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

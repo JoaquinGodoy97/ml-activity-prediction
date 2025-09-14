@@ -17,16 +17,17 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ActivityPredictor:
-    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='onnx_model_quantized'):
+    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='model_quantized.onnx'):
         """Initialize the predictor with a single embedding model"""
 
         # self.embed_model = SentenceTransformer(embedding_model_name)
         #Onnx to shrink model size
-        # self.tokenizer = AutoTokenizer.from_pretrained(embedding_model_name)
+        
 
         self.onnx_model_path = onnx_model_path
         self.model_file = model_file
-        # Use file_name parameter to specify the exact ONNX file
+        
+        self.tokenizer = AutoTokenizer.from_pretrained(self.onnx_model_path)
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
             self.onnx_model_path,
             file_name=self.model_file,

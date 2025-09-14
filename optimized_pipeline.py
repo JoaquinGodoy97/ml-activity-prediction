@@ -27,7 +27,7 @@ class ActivityPredictor:
         self.onnx_model_path = onnx_model_path
         self.model_file = model_file
         
-        self.tokenizer = AutoTokenizer.from_pretrained(self.onnx_model_path, local_files_only=True)  # FIXED: Use local files only
+        self.tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/paraphrase-MiniLM-L3-v2")  # FIXED: Use local files only
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
             self.onnx_model_path,
             file_name=self.model_file,

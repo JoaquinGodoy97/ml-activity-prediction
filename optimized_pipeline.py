@@ -72,17 +72,17 @@ class ActivityPredictor:
         outputs = self.embed_model(**inputs)
         
         # Use sentence_embedding instead of last_hidden_state
-        embeddings = outputs["sentence_embedding"]
-        return embeddings
+        # embeddings = outputs["sentence_embedding"]
+        # return embeddings
         
-        # # Handle different output structures for quantized vs original models
-        # if hasattr(outputs, 'last_hidden_state'):
-        #     # Original model structure
-        #     embeddings = outputs.last_hidden_state
-        # else:
-        #     # Quantized model structure - get the first output
-        #     embeddings = list(outputs.values())[0]
-        # return embeddings.mean(dim=1).detach().numpy()
+        # Handle different output structures for quantized vs original models
+        if hasattr(outputs, 'last_hidden_state'):
+            # Original model structure
+            embeddings = outputs.last_hidden_state
+        else:
+            # Quantized model structure - get the first output
+            embeddings = list(outputs.values())[0]
+        return embeddings.mean(dim=1).detach().numpy()
     
     def train_main_model(self):
         """Train the main model for task classification"""

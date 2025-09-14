@@ -82,17 +82,21 @@ class ActivityPredictor:
         
         inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         outputs = self.embed_model(**inputs)
-        print("Model outputs:", list(outputs.keys()))  # Debug
-        if "sentence_embedding" in outputs:
-            embeddings = outputs["sentence_embedding"]
-        elif "last_hidden_state" in outputs:
-            embeddings = outputs["last_hidden_state"].mean(axis=1)  # Reduce 3D to 2D
-            print("Warning: Using mean of last_hidden_state as fallback")
+        # Handle outputs robustly
+        if isinstance(outputs, dict):
+            keys = list(outputs.keys())
+            print("Model outputs:", keys)  # Debug
+            if "sentence_embedding" in outputs:
+                embeddings = outputs["sentence_embedding"]
+            elif "last_hidden_state" in outputs:
+                embeddings = outputs["last_hidden_state"].mean(axis=1)
+            else:
+                embeddings = list(outputs.values())[0].mean(axis=1)
         else:
-            embeddings = list(outputs.values())[0].mean(axis=1)  # Fallback
-            print("Warning: Using mean of first output as fallback")
-        return embeddings
-    
+            # tuple case
+            embeddings = outputs[0].mean(axis=1)
+
+        return embeddings.detach().cpu().numpy()
     
         # # Handle different output structures for quantized vs original models
         # if hasattr(outputs, 'last_hidden_state'):

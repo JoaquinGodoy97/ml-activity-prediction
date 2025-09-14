@@ -4,7 +4,8 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir --root-user-action=ignore -r requirements.txt
 COPY optimized_pipeline.py app.py .
-# Copy the entire repo to get .git directory for LFS
+# Copy .git directory first to enable LFS
+COPY .git ./.git
 COPY . .
 # Fetch LFS files
 RUN git lfs pull

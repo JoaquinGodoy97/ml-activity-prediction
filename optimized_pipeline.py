@@ -80,7 +80,7 @@ class ActivityPredictor:
         # inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         # outputs = self.embed_model(**inputs)
         
-        inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True)
+        inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         outputs = self.embed_model(**inputs)
         print("Model outputs:", list(outputs.keys()))  # Debug
         if "sentence_embedding" in outputs:

@@ -17,7 +17,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 class ActivityPredictor:
-    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='model_quantized.onnx'):
+    def __init__(self, onnx_model_path='onnx_model_quantized', model_file='model.onnx'):
         """Initialize the predictor with a single embedding model"""
 
         # self.embed_model = SentenceTransformer(embedding_model_name)
@@ -33,7 +33,8 @@ class ActivityPredictor:
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
             self.onnx_model_path,
             file_name=self.model_file,
-            local_files_only=True
+            local_files_only=True,
+            export=False
         )
 
         self.tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/paraphrase-MiniLM-L3-v2")  # FIXED: Use local files only

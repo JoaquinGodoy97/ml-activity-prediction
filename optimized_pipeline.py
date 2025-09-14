@@ -70,8 +70,13 @@ class ActivityPredictor:
         """Generate embeddings using ONNX model - FIXED VERSION"""
         inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
         outputs = self.embed_model(**inputs)
-        # Get the first output (usually the embeddings) - FIXED
-        embeddings = list(outputs.values())[0]
+        # Handle different output structures for quantized vs original models
+        if hasattr(outputs, 'last_hidden_state'):
+            # Original model structure
+            embeddings = outputs.last_hidden_state
+        else:
+            # Quantized model structure - get the first output
+            embeddings = list(outputs.values())[0]
         return embeddings.mean(dim=1).detach().numpy()
     
     def train_main_model(self):

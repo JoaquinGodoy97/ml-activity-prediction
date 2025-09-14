@@ -26,13 +26,22 @@ class ActivityPredictor:
 
         self.onnx_model_path = onnx_model_path
         self.model_file = model_file
-        
-        self.tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/paraphrase-MiniLM-L3-v2")  # FIXED: Use local files only
+        model_path = os.path.join(self.onnx_model_path, self.model_file)
+
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"ONNX model not found at {model_path}")
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
             self.onnx_model_path,
             file_name=self.model_file,
             local_files_only=True
         )
+
+        self.tokenizer = AutoTokenizer.from_pretrained("sentence-transformers/paraphrase-MiniLM-L3-v2")  # FIXED: Use local files only
+        # self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
+        #     self.onnx_model_path,
+        #     file_name=self.model_file,
+        #     local_files_only=True
+        # )
 
         self.main_model = None
         self.slot_model = None
@@ -68,21 +77,31 @@ class ActivityPredictor:
     
     def _generate_embeddings(self, texts):
         """Generate embeddings using ONNX model - FIXED VERSION"""
-        inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
+        # inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True, return_token_type_ids=False)
+        # outputs = self.embed_model(**inputs)
+        
+        inputs = self.tokenizer(texts, return_tensors="pt", padding=True, truncation=True)
         outputs = self.embed_model(**inputs)
-        
-        # Use sentence_embedding instead of last_hidden_state
-        # embeddings = outputs["sentence_embedding"]
-        # return embeddings
-        
-        # Handle different output structures for quantized vs original models
-        if hasattr(outputs, 'last_hidden_state'):
-            # Original model structure
-            embeddings = outputs.last_hidden_state
+        print("Model outputs:", list(outputs.keys()))  # Debug
+        if "sentence_embedding" in outputs:
+            embeddings = outputs["sentence_embedding"]
+        elif "last_hidden_state" in outputs:
+            embeddings = outputs["last_hidden_state"].mean(axis=1)  # Reduce 3D to 2D
+            print("Warning: Using mean of last_hidden_state as fallback")
         else:
-            # Quantized model structure - get the first output
-            embeddings = list(outputs.values())[0]
-        return embeddings.mean(dim=1).detach().numpy()
+            embeddings = list(outputs.values())[0].mean(axis=1)  # Fallback
+            print("Warning: Using mean of first output as fallback")
+        return embeddings
+    
+    
+        # # Handle different output structures for quantized vs original models
+        # if hasattr(outputs, 'last_hidden_state'):
+        #     # Original model structure
+        #     embeddings = outputs.last_hidden_state
+        # else:
+        #     # Quantized model structure - get the first output
+        #     embeddings = list(outputs.values())[0]
+        # return embeddings.mean(dim=1).detach().numpy()
     
     def train_main_model(self):
         """Train the main model for task classification"""

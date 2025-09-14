@@ -5,7 +5,7 @@ import os
 # Local use
 def main():
     """Main execution function"""
-    predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized', model_file='model_quantized.onnx')
+    predictor = ActivityPredictor(onnx_model_path='onnx_model_quantized', model_file='model.onnx')
     
     # Check if models exist, if not train them
     if not all(os.path.exists(f) for f in ["main_model.joblib", "slot_model.joblib", "slot_encoders.joblib"]):

@@ -23,10 +23,15 @@ class ActivityPredictor:
         # self.embed_model = SentenceTransformer(embedding_model_name)
         #Onnx to shrink model size
         # self.tokenizer = AutoTokenizer.from_pretrained(embedding_model_name)
+
         self.onnx_model_path = onnx_model_path
         self.model_file = model_file
+
+        # Construct the full path to the ONNX model file
+        model_path = os.path.join(self.onnx_model_path, self.model_file)
+        # Ensure from_pretrained uses local path
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
-            os.path.join(self.onnx_model_path, self.model_file)
+            model_path, local_files_only=True
         )
 
         self.main_model = None

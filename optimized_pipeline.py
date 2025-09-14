@@ -26,12 +26,11 @@ class ActivityPredictor:
 
         self.onnx_model_path = onnx_model_path
         self.model_file = model_file
-
-        # Construct the full path to the ONNX model file
-        model_path = os.path.join(self.onnx_model_path, self.model_file)
-        # Ensure from_pretrained uses local path
+        # Use file_name parameter to specify the exact ONNX file
         self.embed_model = ORTModelForFeatureExtraction.from_pretrained(
-            model_path, local_files_only=True
+            self.onnx_model_path,
+            file_name=self.model_file,
+            local_files_only=True
         )
 
         self.main_model = None
